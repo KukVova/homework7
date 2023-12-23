@@ -11,10 +11,10 @@ class Iterator():
         if self.i == self.max_num:
             raise StopIteration
         def gen():
-            n = 0
-            while n != 10:
-                n += 2
-                yield n
+            i = 0
+            while i != 10:
+                i += 2
+                yield i
 
         return gen
 
@@ -27,4 +27,3 @@ print(next(f))
 print(next(f))
 print(next(f))
 print(next(f))
-
